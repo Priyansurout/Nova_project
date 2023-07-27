@@ -26,6 +26,7 @@ app.post("/", (req, res) => {
 
 app.get("/", (req, res) => {
     console.log("hi")
+    return res.json({"name" :"Priyansu"})
 
     
 })
