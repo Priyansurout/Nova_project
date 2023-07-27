@@ -19,10 +19,10 @@ export default function SingUpPage() {
 
     const handlePosttoServer = async (e) => {
         e.preventDefault();
-        console.log(`${user.name} Thank you to be our new user`)
+        //console.log(`${user.name} Thank you to be our new user`)
         const {name, email, password} = user;
 
-        const res = await fetch('http://localhost:5000/', {
+        const res = await fetch('http://localhost:5000/register', {
             method : 'POST',
             headers : {
                 "Content-type" : "application/json"
@@ -33,12 +33,13 @@ export default function SingUpPage() {
         });
         
         const data = await res.json();
+        
         console.log(data)
         console.log(res.status)
         if (res.status === 422){
 
             console.log("Trying to redict the page")
-            window.alert("Invild Name")
+            window.alert("Invild  Input")
             return navigate("/search");
         
         }
