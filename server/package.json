@@ -1,0 +1,17 @@
+{
+  "name": "music_nova",
+  "version": "1.0.0",
+  "description": "This make music better for you",
+  "git respository": "https://github.com/Priyansurout/nova_music.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyansu rout",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
