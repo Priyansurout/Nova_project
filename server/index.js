@@ -9,7 +9,7 @@ PORT = process.env.PORT || 5000;
 const userRout= require("./routes/users")
 
 // Connecting to MongoDB
-ConnectToMongodb("mongodb://127.0.0.1:27017/Nova_Music")
+ConnectToMongodb("mongodb://127.0.0.1:27017/Nova_song")
 const User = require("../Database/model/users")
 
 

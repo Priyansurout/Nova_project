@@ -24,7 +24,7 @@ async function handelRegisterUser(req, res){
     //Check for email
     const check_email = await emailValidator.validate(body.email)
     //console.log(check_email)
-    if (check_email.valid){
+    if (!check_email.valid){
         return res.status(422).json({message : "Not a Valid Email"}).end()
     }
 
@@ -59,6 +59,33 @@ async function handelRegisterUser(req, res){
 
 }
 
+async function handelLoginUser(req, res){
+   
+    console.log(req.body) 
+    
+    // Body of Request
+    const body = req.body
+
+    try {
+        // finding the user in Database
+        const user = await User.findOne({ email: body.email });
+    
+        if (user && await bcrypt.compare(body.password, user.password)) {
+          const token = generateToken(user);
+          res.status(200).json({ token });
+        } else {
+          res.status(401).json({ message: 'Invalid credentials' });
+        }
+      } catch (error) {
+        res.send(error.message);
+      }
+
+
+   
+
+}
+
 module.exports = {
-    handelRegisterUser
+    handelRegisterUser,
+    handelLoginUser
 }

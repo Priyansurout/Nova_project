@@ -7,6 +7,7 @@ import Video from './components/Video';
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import SearchPage from './components/SearchPage';
 import SingUpPage from './components/SingUpPage';
+import LoginUpPage from './components/Login';
 
 
 
@@ -68,6 +69,7 @@ function App() {
       <Route exact path="/" element={<Homepage/>}/>
       <Route exact path="/search" element={<SearchPage search={search}  data_art={data_art}/>} />
       <Route exact path="/singup" element={<SingUpPage/>}/>
+      <Route exact path='/login' element={<LoginUpPage/>}/>
     </Routes>
 
     {/* <div className='container my-100 mx-4'>

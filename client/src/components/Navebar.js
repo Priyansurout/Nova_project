@@ -4,10 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Dashboard', href: '/', current: true },
-  { name: 'Playlists', href: '/', current: false },
   { name: 'Search', href: '/search', current: false },
-  { name: 'Albums', href: '/', current: false },
-  { name: 'Explore Premium', href: '/', current: false },
+  { name: 'Live', href: '/', current: false },
+  { name: 'Login', href: '/login', current: false }
 ]
 function classNames(...classes) {
   // console.log(classes.filter(Boolean))
@@ -45,11 +44,16 @@ export default function Navebar() {
                   )} aria-current={item.current ? 'page' : undefined} >
                     {item.name} 
                   </a>
+                  
                 ))}
-          
+                  
               </div>
               <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                
+          
+              <a key="Singup" href="/singup" className='text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2'
+                   aria-current='page' >
+                    SignUp
+                  </a>
                 <img
                 className="h-11 w-11 rounded-full mr-6"
                 src={music_img}
