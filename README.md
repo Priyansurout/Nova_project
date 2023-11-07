@@ -40,7 +40,7 @@ To set up the project on your system, follow these steps:
       `nodemon index.js`
       
 8. **Congratulations!:**
-    + The project is now up and running. If you encounter any issues, please feel free to contact us at priyansurout192004@example.com.
+    + The project is now up and running. If you encounter any issues, please feel free to contact us at priyansurout192004@gmail.com.
 
 
 # Contributing
