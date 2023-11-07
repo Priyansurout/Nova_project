@@ -41,3 +41,11 @@ To set up the project on your system, follow these steps:
       
 8. **Congratulations!:**
     + The project is now up and running. If you encounter any issues, please feel free to contact us at priyansurout192004@example.com.
+
+
+# Contributing
+We welcome contributions from the community! If you'd like to get involved, please follow our contribution guidelines.
+
+# Acknowledgements
++ Special thanks to the Spotify API for providing access to an extensive music library.
++ We appreciate the support of our contributors and the open-source community.
